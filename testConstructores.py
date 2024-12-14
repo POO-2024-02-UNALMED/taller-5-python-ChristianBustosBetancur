@@ -1,11 +1,11 @@
 from gestion.zona import Zona
-from gestion.zoologico import Zoologico 
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
-from zooAnimales.animal import Animal
+from gestion.Zoologico import Zoologico 
+from zooAnimales.Anfibio import Anfibio
+from zooAnimales.Ave import Ave
+from zooAnimales.Mamifero import Mamifero
+from zooAnimales.Pez import Pez
+from zooAnimales.Reptil import Reptil
+from zooAnimales.Animal import Animal
 
 def testZoologico():
     zoo = Zoologico("Central park", "Calle Principal")
