@@ -16,13 +16,13 @@ class Anfibio(Animal):
         return len(Anfibio._listado)
 
     @staticmethod
-    def crear_rana(nombre, edad, genero):
+    def crearRana(nombre, edad, genero):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
         Anfibio.ranas += 1
         return rana
 
     @staticmethod
-    def crear_salamandra(nombre, edad, genero):
+    def crearSalamandra(nombre, edad, genero):
         salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         Anfibio._salamandras += 1
         return salamandra
@@ -40,7 +40,7 @@ class Anfibio(Animal):
     def isVenenoso(self):
         return self._venenoso
 
-    def set_venenoso(self, venenoso):
+    def setVenenoso(self, venenoso):
         self._venenoso = venenoso
 
     @staticmethod
