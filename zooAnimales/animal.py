@@ -1,7 +1,7 @@
 from zooAnimales import Anfibio, ave, mamifero, pez, reptil
 
 
-class Animal:
+class animal:
     total_animales = 0
 
     def __init__(self, nombre=None, edad=None, habitat=None, genero=None):

@@ -1,6 +1,6 @@
 from zooAnimales import animal
 
-class Anfibio(animal):
+class anfibio(animal):
     listado = []
     ranas = 0
     salamandras = 0
