@@ -1,4 +1,4 @@
-from zooAnimales import Anfibio, Ave, Mamifero, Pez, Reptil
+from zooAnimales import Anfibio, ave, mamifero, pez, reptil
 
 
 class Animal:
@@ -17,10 +17,10 @@ class Animal:
 
     @staticmethod
     def total_por_tipo():
-        return (f"Mamiferos: {Mamifero.cantidad_mamiferos()}\n"
-                f"Aves: {Ave.cantidad_aves()}\n"
-                f"Reptiles: {Reptil.cantidad_reptiles()}\n"
-                f"Peces: {Pez.cantidad_peces()}\n"
+        return (f"Mamiferos: {mamifero.cantidad_mamiferos()}\n"
+                f"Aves: {ave.cantidad_aves()}\n"
+                f"Reptiles: {reptil.cantidad_reptiles()}\n"
+                f"Peces: {pez.cantidad_peces()}\n"
                 f"Anfibios: {Anfibio.cantidad_anfibios()}")
 
     def __str__(self):
