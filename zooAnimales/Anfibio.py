@@ -18,7 +18,7 @@ class Anfibio(Animal):
     @staticmethod
     def crearRana(nombre, edad, genero):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
-        Anfibio.ranas += 1
+        Anfibio._ranas += 1
         return rana
 
     @staticmethod
