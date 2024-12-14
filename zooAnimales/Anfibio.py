@@ -1,4 +1,4 @@
-from zooAnimales import Animal
+from .Animal import Animal
 
 class Anfibio(Animal):
     _listado = []
@@ -9,32 +9,29 @@ class Anfibio(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._colorPiel = color_piel
         self._venenoso = venenoso
-        Anfibio.listado.append(self)
+        Anfibio._listado.append(self)
 
     @staticmethod
-    def cantidad_anfibios():
+    def cantidadAnfibios():
         return len(Anfibio._listado)
 
     @staticmethod
     def crearRana(nombre, edad, genero):
-        rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
         Anfibio._ranas += 1
-        return rana
+        return Anfibio(nombre, edad, "selva", genero, "rojo", True)
 
     @staticmethod
     def crearSalamandra(nombre, edad, genero):
-        salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         Anfibio._salamandras += 1
-        return salamandra
+        return Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
 
     def movimiento(self):
         return "saltar"
 
-    # Getters and Setters
     def getColorPiel(self):
-        return self._colorPiiel
+        return self._colorPiel
 
-    def setcolorPiel(self, colorPiel):
+    def setColorPiel(self, colorPiel):
         self._colorPiel = colorPiel
 
     def isVenenoso(self):
