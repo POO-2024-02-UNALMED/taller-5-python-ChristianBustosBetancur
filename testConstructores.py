@@ -1,5 +1,5 @@
 from gestion.zona import Zona
-from gestion.Zoologico import Zoologico 
+from gestion.zoologico import Zoologico 
 from zooAnimales.Anfibio import Anfibio
 from zooAnimales.Ave import Ave
 from zooAnimales.Mamifero import Mamifero
