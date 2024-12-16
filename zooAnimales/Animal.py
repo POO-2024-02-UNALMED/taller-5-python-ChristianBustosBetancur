@@ -28,8 +28,7 @@ class Animal:
                 f"Anfibios : {Anfibio.getCantidadAnfibios()}")
 
     def __str__(self):
-        if self.zona:
-            if self._zona:
+        if self._zona:
                 return (f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, "
                         f"la zona en la que me ubico es {self._zona._nombre}, en el {self._zona.getZoo().getNombre()}")
         else:
