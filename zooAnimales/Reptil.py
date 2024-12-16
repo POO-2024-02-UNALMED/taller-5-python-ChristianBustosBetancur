@@ -11,6 +11,12 @@ class Reptil(Animal):
         self._largoCola = largoCola
         Reptil.listado.append(self)
   
+    def __str__(self):
+        return f"Mi nombre es {self._nombre}, tengo una edad de 
+        {self._edad}, habito en {self._habitat}, mi género es 
+        {self._genero}, mi color de escamas es {self._colorEscamas}
+        y mi largo de cola es {self._largoCola}"
+
 
     def movimiento(self):
         return "reptar"

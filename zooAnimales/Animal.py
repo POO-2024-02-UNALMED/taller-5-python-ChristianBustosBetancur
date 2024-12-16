@@ -23,7 +23,7 @@ class Animal:
         from zooAnimales.Reptil import Reptil
         return (f"Mamiferos: {Mamifero.getCantidadMamiferos()}\n"
                 f"Aves: {Ave.getCantidadAves()}\n"
-                f"Reptiles: {Reptil._getCantidadReptiles()}\n"
+                f"Reptiles: {Reptil.getCantidadReptiles()}\n"
                 f"Peces: {Pez.getCantidadPeces()}\n"
                 f"Anfibios: {Anfibio.getCantidadAnfibios()}")
 

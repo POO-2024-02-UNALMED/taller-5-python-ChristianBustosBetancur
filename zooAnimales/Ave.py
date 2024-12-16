@@ -10,6 +10,11 @@ class Ave(Animal):
         self._colorPlumas = colorPlumas
         Ave.listado.append(self)
     
+    def __str__(self):
+        return f"Mi nombre es {self._nombre}, tengo una edad de 
+                {self._edad}, habito en {self._habitat}, mi género es 
+                {self._genero} y mi color de plumas es {self._colorPlumas}"
+
   
     def movimiento(self):
         return "volar"
