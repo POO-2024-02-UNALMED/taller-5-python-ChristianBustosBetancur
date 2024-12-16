@@ -9,7 +9,7 @@ class Reptil(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._colorEscamas = colorEscamas
         self._largoCola = largoCola
-        Reptil.listado.append(self)
+        Reptil._listado.append(self)
 
     def movimiento(self):
         return "reptar"
@@ -41,3 +41,7 @@ class Reptil(Animal):
 
     def setLargoCola(self, largo_cola):
         self._largoCola = largo_cola
+    
+    @staticmethod
+    def getListado():
+        return Reptil._listado

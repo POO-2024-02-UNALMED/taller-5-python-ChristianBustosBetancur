@@ -27,7 +27,7 @@ class Mamifero(Animal):
         Animal._totalAnimales += 1
         return Mamifero(nombre, edad, "selva", genero, True, 4)
     
-    def pelaje(self):
+    def isPelaje(self):
         return self._pelaje
 
     def setPelaje(self, pelaje):
