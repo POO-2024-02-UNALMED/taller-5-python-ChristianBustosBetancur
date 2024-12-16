@@ -2,8 +2,8 @@ from zooAnimales.Animal import Animal
 
 class Reptil(Animal):
     listado = []
-    _iguanas = 0
-    _serpientes = 0
+    iguanas = 0
+    serpientes = 0
 
     def __init__(self, nombre=None, edad=None, habitat=None, genero=None, colorEscamas=None, largoCola=None):
         super().__init__(nombre, edad, habitat, genero)
@@ -21,13 +21,13 @@ class Reptil(Animal):
 
     @staticmethod
     def crearIguana(nombre, edad, genero):
-        Reptil._iguanas += 1
+        Reptil.iguanas += 1
         Animal._totalAnimales += 1
         return Reptil(nombre, edad, "humedal", genero, "verde", 3)
 
     @staticmethod
     def crearSerpiente(nombre, edad, genero):
-        Reptil._serpientes += 1
+        Reptil.serpientes += 1
         Animal._totalAnimales += 1
         return Reptil(nombre, edad, "jungla", genero, "blanco", 1)
     

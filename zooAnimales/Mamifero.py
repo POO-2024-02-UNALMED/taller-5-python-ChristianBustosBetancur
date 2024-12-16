@@ -2,8 +2,8 @@ from zooAnimales.Animal import Animal
 
 class Mamifero(Animal):
     listado = []
-    _caballos = 0
-    _leones = 0
+    caballos = 0
+    _eones = 0
 
     def __init__(self, nombre=None, edad=None, habitat=None, genero=None, pelaje=None, patas=None):
         super().__init__(nombre, edad, habitat, genero)
@@ -19,23 +19,23 @@ class Mamifero(Animal):
 
     @staticmethod
     def crearCaballo(nombre, edad, genero):
-        Mamifero._caballos += 1
+        Mamifero.caballos += 1
         Animal._totalAnimales += 1
         return Mamifero(nombre, edad, "pradera", genero, True, 4)
 
     @staticmethod
     def crearLeon(nombre, edad, genero):
-        Mamifero._leones += 1
+        Mamifero.leones += 1
         Animal._totalAnimales += 1
         return Mamifero(nombre, edad, "selva", genero, True, 4)
     
     @staticmethod
     def getCaballos():
-        return Mamifero._caballos
+        return Mamifero.caballos
 
     @staticmethod
     def getLeones():
-        return Mamifero._leones
+        return Mamifero.leones
     
     def isPelaje(self):
         return self._pelaje
