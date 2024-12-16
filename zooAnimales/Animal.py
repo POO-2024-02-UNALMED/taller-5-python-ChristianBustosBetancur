@@ -21,11 +21,11 @@ class Animal:
         from zooAnimales.Mamifero import Mamifero
         from zooAnimales.Pez import Pez
         from zooAnimales.Reptil import Reptil
-        return (f"Mamiferos: {Mamifero.getCantidadMamiferos()}\n"
-                f"Aves: {Ave.getCantidadAves()}\n"
-                f"Reptiles: {Reptil.getCantidadReptiles()}\n"
-                f"Peces: {Pez.getCantidadPeces()}\n"
-                f"Anfibios: {Anfibio.getCantidadAnfibios()}")
+        return (f"Mamiferos : {Mamifero.getCantidadMamiferos()}\n"
+                f"Aves : {Ave.getCantidadAves()}\n"
+                f"Reptiles : {Reptil.getCantidadReptiles()}\n"
+                f"Peces : {Pez.getCantidadPeces()}\n"
+                f"Anfibios : {Anfibio.getCantidadAnfibios()}")
 
     def __str__(self):
         if self.zona:
@@ -34,6 +34,10 @@ class Animal:
                         f"la zona en la que me ubico es {self._zona._nombre}, en el {self._zona.getZoo().getNombre()}")
         else:
             return (f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en {self._habitat} y mi genero es {self._genero}")
+        
+    def toString(self):
+        return self.__str__()
+
 
     def getNombre(self):
         return self._nombre
