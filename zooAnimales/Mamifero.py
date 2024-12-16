@@ -3,7 +3,7 @@ from zooAnimales.Animal import Animal
 class Mamifero(Animal):
     listado = []
     caballos = 0
-    _eones = 0
+    leones = 0
 
     def __init__(self, nombre=None, edad=None, habitat=None, genero=None, pelaje=None, patas=None):
         super().__init__(nombre, edad, habitat, genero)
