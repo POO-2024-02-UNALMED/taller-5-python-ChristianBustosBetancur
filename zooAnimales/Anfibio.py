@@ -1,4 +1,4 @@
-from .Animal import Animal
+from zooAnimales.Animal import Animal
 
 class Anfibio(Animal):
     _listado = []
