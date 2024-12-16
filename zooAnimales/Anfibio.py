@@ -11,6 +11,11 @@ class Anfibio(Animal):
         self._venenoso = venenoso
         Anfibio.listado.append(self)
 
+    def __str__(self):
+        venenoso = "si" if self._venenoso else "no"
+        return (f"Soy un anfibio llamado {self._nombre}, tengo {self._edad} años, vivo en {self._habitat}, "
+                f"mi género es {self._genero}, mi piel es de color {self._colorPiel} y soy venenoso: {venenoso}.")
+        
 
     @staticmethod
     def cantidadAnfibios():
