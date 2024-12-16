@@ -8,7 +8,7 @@ class Zoologico:
         self._zonas.append(zona)
 
     def cantidadAnimales(self):
-        return sum(zona.cantidadAnimales() for zona in self._zonas)
+        return sum(zona.cantidadTotalAnimales() for zona in self._zonas)
     
     def getNombre(self):
         return self._nombre
@@ -22,5 +22,5 @@ class Zoologico:
     def setUbicacion(self, ubicacion):
         self._ubicacion = ubicacion
 
-    def getZonas(self):
-        return self._zonas
+    def getZona(self):
+        return self._zonas  

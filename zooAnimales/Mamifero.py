@@ -29,6 +29,14 @@ class Mamifero(Animal):
         Animal._totalAnimales += 1
         return Mamifero(nombre, edad, "selva", genero, True, 4)
     
+    @staticmethod
+    def getCaballos():
+        return Mamifero._caballos
+
+    @staticmethod
+    def getLeones():
+        return Mamifero._leones
+    
     def isPelaje(self):
         return self._pelaje
 

@@ -21,16 +21,17 @@ class Animal:
         from zooAnimales.Mamifero import Mamifero
         from zooAnimales.Pez import Pez
         from zooAnimales.Reptil import Reptil
-        return (f"Mamiferos: {Mamifero._getCantidadMamiferos()}\n"
-                f"Aves: {Ave._getCantidadAves()}\n"
+        return (f"Mamiferos: {Mamifero.getCantidadMamiferos()}\n"
+                f"Aves: {Ave.getCantidadAves()}\n"
                 f"Reptiles: {Reptil._getCantidadReptiles()}\n"
-                f"Peces: {Pez._getCantidadPeces()}\n"
-                f"Anfibios: {Anfibio._getCantidadAnfibios()}")
+                f"Peces: {Pez.getCantidadPeces()}\n"
+                f"Anfibios: {Anfibio.getCantidadAnfibios()}")
 
     def __str__(self):
         if self.zona:
-            return (f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, "
-                    f"la zona en la que me ubico es {self.zona._nombre}, en el {self.zona.zoo._nombre}")
+            if self._zona:
+                return (f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, "
+                        f"la zona en la que me ubico es {self._zona._nombre}, en el {self._zona.getZoo().getNombre()}")
         else:
             return (f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en {self._habitat} y mi genero es {self._genero}")
 
