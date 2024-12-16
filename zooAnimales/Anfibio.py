@@ -10,6 +10,7 @@ class Anfibio(Animal):
         self._colorPiel = color_piel
         self._venenoso = venenoso
         Anfibio._listado.append(self)
+        
 
     @staticmethod
     def cantidadAnfibios():
@@ -18,11 +19,13 @@ class Anfibio(Animal):
     @staticmethod
     def crearRana(nombre, edad, genero):
         Anfibio._ranas += 1
+        Animal._totalAnimales += 1
         return Anfibio(nombre, edad, "selva", genero, "rojo", True)
 
     @staticmethod
     def crearSalamandra(nombre, edad, genero):
         Anfibio._salamandras += 1
+        Animal._totalAnimales += 1
         return Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
 
     def movimiento(self):

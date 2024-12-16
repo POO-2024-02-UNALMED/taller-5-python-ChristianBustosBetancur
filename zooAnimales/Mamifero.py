@@ -18,9 +18,23 @@ class Mamifero(Animal):
     @staticmethod
     def crearCaballo(nombre, edad, genero):
         Mamifero._caballos += 1
+        Animal._totalAnimales += 1
         return Mamifero(nombre, edad, "pradera", genero, True, 4)
 
     @staticmethod
     def crearLeon(nombre, edad, genero):
         Mamifero._leones += 1
+        Animal._totalAnimales += 1
         return Mamifero(nombre, edad, "selva", genero, True, 4)
+    
+    def pelaje(self):
+        return self._pelaje
+
+    def setPelaje(self, pelaje):
+        self._pelaje = pelaje
+
+    def getPatas(self):
+        return self._patas
+
+    def setPatas(self, patas):
+        self._patas = patas

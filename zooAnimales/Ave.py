@@ -20,9 +20,17 @@ class Ave(Animal):
     @staticmethod
     def crearHalcon(nombre, edad, genero):
         Ave._halcones += 1
+        Animal._totalAnimales += 1
         return Ave(nombre, edad, "montanas", genero, "cafe glorioso")
 
     @staticmethod
     def crearAguila(nombre, edad, genero):
         Ave._aguilas += 1
+        Animal._totalAnimales += 1
         return Ave(nombre, edad, "montanas", genero, "blanco y amarillo")
+    
+    def getColorPlumas(self):
+        return self._colorPlumas
+
+    def setColorPlumas(self, color_plumas):
+        self._colorPlumas = color_plumas

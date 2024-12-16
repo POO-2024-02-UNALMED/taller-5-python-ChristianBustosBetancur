@@ -21,9 +21,23 @@ class Reptil(Animal):
     @staticmethod
     def crearIguana(nombre, edad, genero):
         Reptil._iguanas += 1
+        Animal._totalAnimales += 1
         return Reptil(nombre, edad, "humedal", genero, "verde", 3)
 
     @staticmethod
     def crearSerpiente(nombre, edad, genero):
         Reptil._serpientes += 1
+        Animal._totalAnimales += 1
         return Reptil(nombre, edad, "jungla", genero, "blanco", 1)
+    
+    def getColorEscamas(self):
+        return self._colorEscamas
+
+    def setColorEscamas(self, color_escamas):
+        self._colorEscamas = color_escamas
+
+    def getLargoCola(self):
+        return self._largoCola
+
+    def setLargoCola(self, largo_cola):
+        self._largoCola = largo_cola
