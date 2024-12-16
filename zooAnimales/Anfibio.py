@@ -10,11 +10,7 @@ class Anfibio(Animal):
         self._colorPiel = color_piel
         self._venenoso = venenoso
         Anfibio.listado.append(self)
-    def __str__(self):
-        return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, 
-                habito en {self._habitat}, mi género es {self._genero}, mi color de piel es 
-                {self._colorPiel} y {'soy' if self._venenoso else 'no soy'} venenoso"
-
+  
 
 
     @staticmethod

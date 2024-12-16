@@ -11,11 +11,6 @@ class Mamifero(Animal):
         self._patas = patas
         Mamifero.listado.append(self)
 
-    def __str__(self):
-        return f"Mi nombre es {self._nombre}, tengo una edad de 
-                {self._edad}, habito en {self._habitat}, mi género es 
-                {self._genero}, {'tengo' if self._pelaje else 'no tengo'} 
-                    pelaje y tengo {self._patas} patas"
 
 
 
